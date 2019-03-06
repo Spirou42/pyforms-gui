@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from pyforms_gui.controls.control_dockwidget import ControlDockWidget
 from AnyQt.QtWidgets import QMainWindow, QDockWidget, QAction, QApplication, QToolBar
