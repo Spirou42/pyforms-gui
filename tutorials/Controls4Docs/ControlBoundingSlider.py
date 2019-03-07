@@ -41,7 +41,7 @@ class SimpleExample(BaseWidget):
 		submenu1 = self._control.add_popup_submenu('menu 1')
 		submenu2 = self._control.add_popup_submenu('menu 2', submenu=submenu1)
 
-		self._control.add_popup_menu_option('option 1', function_action=lambda x: x, key='Control+Q', submenu=submenu2)
+		self._control.add_popup_menu_option('option 1', function_action=lambda x: x, key='Control+Q', menu=submenu2)
 
 		self._control.changed_event = self.__control_changed_event
 
@@ -50,7 +50,7 @@ class SimpleExample(BaseWidget):
 		#self._control.label = 'Some label'
 
 	def __control_changed_event(self):
-		print self._control.value
+		print(self._control.value)
 
 
 

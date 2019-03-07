@@ -46,7 +46,7 @@ class SimpleExample1(BaseWidget):
 		axes.bar(x, height=data)
 
 		
-		axes = figure.add_subplot(222, projection='3d')
+		axes = figure.add_subplot(222, projection='polar')
 		#axes.clear(); 
 		pts = axes.scatter(x, data, data, c=x)
 		figure.colorbar(pts)
