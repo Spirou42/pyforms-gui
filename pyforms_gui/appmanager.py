@@ -188,7 +188,7 @@ def start_app(ClassObject, geometry=None, stylesheet=None, user_settings=None):
         mainwindow.show()
         mainwindow.setGeometry(*geometry)
     else:
-        mainwindow.showMaximized()
+        mainwindow.showNormal()
 
     if conf.PYFORMS_QUALITY_TESTS_PATH is not None:
         import argparse
