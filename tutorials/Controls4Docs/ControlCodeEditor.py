@@ -27,7 +27,7 @@ class SimpleExample(BaseWidget):
 		self._control.changed_event = self.__print_value
 
 	def __print_value(self):
-		print self._control.value
+		print(self._control.value)
 
 		return True
 

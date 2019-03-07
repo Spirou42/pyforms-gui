@@ -29,7 +29,7 @@ class SimpleExample(BaseWidget):
 		self._open.value = self.__open
 		
 	def __open(self):
-		file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '2.ControlsExamples', 'lena.png')
+		file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '../2.ControlsExamples', 'lena.png')
 		self._control.value = cv2.imread(file_path)
 
 

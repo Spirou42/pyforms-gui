@@ -30,10 +30,10 @@ class Example3(BaseWidget):
 		self.formset = [ ('_combobox',' '), '_progress', '=',('_visvisVolume', '||','_list'), '_timeline']
 
 		
-		self._combobox.addItem('Item 1', 'Value 1')
-		self._combobox.addItem('Item 2', 'Value 2')
-		self._combobox.addItem('Item 3', 'Value 3')
-		self._combobox.addItem('Item 4') #The value is = to the item
+		self._combobox.add_item('Item 1', 'Value 1')
+		self._combobox.add_item('Item 2', 'Value 2')
+		self._combobox.add_item('Item 3', 'Value 3')
+		self._combobox.add_item('Item 4') #The value is = to the item
 
 		self._list.value = [ ('Item1', 'Item2', 'Item3',), ('Item3', 'Item4', 'Item5',)]
 
