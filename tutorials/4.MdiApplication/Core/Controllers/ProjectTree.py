@@ -2,7 +2,7 @@ import pyforms
 from pyforms.basewidget import BaseWidget
 
 
-from PyQt4 import QtGui, QtCore
+from AnyQt import QtGui, QtCore
 from pyforms.controls import ControlText
 from pyforms.controls import ControlButton
 from pyforms.controls import ControlTree
@@ -22,7 +22,7 @@ class ProjectTree(BaseWidget):
 		barA = QtGui.QTreeWidgetItem(A, ["bar", "i", "ii"])
 		bazA = QtGui.QTreeWidgetItem(A, ["baz", "a", "b"])
 
-		self._projectTree.showHeader = False
+		self._projectTree.showHeader = True
 		
 
 		self.formset = [ (' ','_addButton'), '_projectTree']

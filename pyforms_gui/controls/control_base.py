@@ -34,6 +34,7 @@ class ControlBase(object):
         self._value         = kwargs.get('default',  None)
         self._label         = kwargs.get('label', args[0] if len(args)>0 else '')
         self._style         = kwargs.get('style', None)
+        self._name          = kwargs.get('name', None)
 
         self.init_form()
 
@@ -56,6 +57,8 @@ class ControlBase(object):
         if self.help: self.form.setToolTip(self.help)
 
         if self._style: self.form.setStyleSheet(self._style)
+        
+        if self._name: self.name = self._name
    
 
 

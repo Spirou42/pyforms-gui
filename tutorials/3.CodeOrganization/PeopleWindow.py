@@ -25,7 +25,7 @@ class PeopleWindow(AddMenuFuntionality, People, BaseWidget):
 		self._peopleList.horizontalHeaders = ['First name', 'Middle name', 'Last name']
 
 	def closeEvent(self, event):
-		print "called on close"
+		print("called on close")
 
 	def initForm(self):
 		super(PeopleWindow, self).initForm()

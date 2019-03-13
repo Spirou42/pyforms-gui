@@ -1,4 +1,4 @@
-from PyQt4 import QtGui
+from AnyQt import QtGui
 
 class AddMenuFuntionality(object):
 	"""

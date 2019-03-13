@@ -33,8 +33,8 @@ class BaseWindow(BaseWidget):
 
 		self.mainmenu.append(
 				{ 'File': [
-						{'Save as': self.saveWindow},
-						{'Open as': self.loadWindow},
+#						{'Save as': self.saveWindow},
+#						{'Open as': self.loadWindow},
 						'-',
 						{'Exit': self.__exit},
 					]
